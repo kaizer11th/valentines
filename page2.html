@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One More Thing... 💖</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cat-container">
+        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" class="floating-cat cat1" alt="cute cat">
+        <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" class="floating-cat cat2" alt="cute cat">
+        <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" class="floating-cat cat3" alt="cute cat">
+        <img src="https://media.giphy.com/media/cfuL5gqFDreXxkWQ4o/giphy.gif" class="floating-cat cat4" alt="cute cat">
+        <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" class="floating-cat cat5" alt="cute cat">
+        <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" class="floating-cat cat6" alt="cute cat">
+        <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" class="floating-cat cat7" alt="cute cat">
+    </div>
+
+    <div class="container">
+        <div class="content-box">
+            <div class="image-placeholder">
+                <img src="3.jpg" alt="my image" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+            </div>
+            <h1 class="question">Firse Valentine banogi meri??</h1>
+            <p class="subtitle">solly for making this a bit late xD</p>
+            <div class="button-container">
+                <button class="btn btn-yes" onclick="handleYes()">Yes! 💕</button>
+                <button class="btn btn-no" onclick="handleNo()">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for YES answer (proceeds to next page) -->
+    <div id="yesModal" class="modal">
+        <div class="modal-content response-modal">
+            <p class="modal-text response-text">thenkuuuuuuuuuuuuu ❤️</p>
+            <button class="btn btn-continue" onclick="continueToNext()">Continue ➜</button>
+        </div>
+    </div>
+
+    <!-- Modal for NO answer (go back button) -->
+    <div id="noModal" class="modal">
+        <div class="modal-content response-modal">
+            <p class="modal-text response-text">hum hote to yes pe click kartee!!!</p>
+            <button class="btn btn-back" onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
